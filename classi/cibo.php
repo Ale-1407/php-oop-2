@@ -1,7 +1,9 @@
 <?php
 
+include_once __DIR__ . './prodotto.php';
+
 class Cibo extends Prodotto{
-    public $peso_netto;
+    public $peso;
     public $ingredienti;
 
     public function __construct(
@@ -9,15 +11,14 @@ class Cibo extends Prodotto{
         String $immagine,
         String $nome,
         Float $prezzo, 
-        String $category,
+        Category $category,
 
-        Float $peso_netto,
+        String $peso,
         String $ingredienti
-    )
-    {
-        $this->peso_netto=$peso_netto;
-        $this->ingredienti=$ingredienti;
+    ) {
         parent::__construct($immagine,$nome,$prezzo,$category);
+        $this->peso=$peso;
+        $this->ingredienti=$ingredienti;
     }
 }
 
