@@ -11,7 +11,12 @@ $categorie = [
     'uccello' => new Categoria('uccello', '<i class="fa-solid fa-crow"></i>')
 ];
 
-
+$prodotto = [
+    new Cibo('https://picsum.photos/800/1200', 'Royal Canin', 43.99, $categorie['cane'], 545, 'pollo'),
+    new Cibo('https://picsum.photos/800/1200', 'Almo nature', 43.99, $categorie['cane'], 600, 'Grano'),
+    new Accessori('https://picsum.photos/800/1200', 'Voliera Ferplast Bella Casa', 184.99, $categorie['uccello'], 'Legno', 'L83 x P 67 x H153cm'),
+    new Giocattoli('https://picsum.photos/800/1200', 'Topini di peluche', 9.99, $categorie['gatto'], 'morbido ed intrattenente', '8.5 x 10')
+];
 
 ?>
 
