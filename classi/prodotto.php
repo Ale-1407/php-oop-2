@@ -13,16 +13,13 @@ class Prodotto{
     String $immagine, 
     String $nome, 
     Float $prezzo, 
-    String $category
-    )
-    
-    {
+    Category $category
+    ) {
         $this->immagine = $immagine;
         $this->nome = $nome;
         $this->prezzo = $prezzo;
         $this->category = $category;
-    }
-
+      }
 }
 
 ?>

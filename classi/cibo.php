@@ -6,14 +6,11 @@ class Cibo extends Prodotto{
 
     public function __construct(
 
-
         String $immagine,
         String $nome,
         Float $prezzo, 
         String $category,
 
-
-        //own
         Float $peso_netto,
         String $ingredienti
     )
